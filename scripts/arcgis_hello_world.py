@@ -1,5 +1,9 @@
 import arcpy
 
+# Crear un mensaje "Hello World" usando la herramienta AddMessage
+arcpy.AddMessage("Hello, World!")
+# print("Hello, World!")
+
 # Especifica la ruta al proyecto de ArcGIS Pro (.aprx)
 proyecto_aprx = arcpy.mp.ArcGISProject(r"C:\Ruta\A\Tu\Proyecto.aprx")
 
