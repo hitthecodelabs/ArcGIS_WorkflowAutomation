@@ -29,7 +29,7 @@ if layout:
             titulo_elemento.text = "Mapa de la Zona Actualizada"
 
         # Exporta el layout a PDF
-        ruta_pdf_export = r"C:\Ruta\De\Salida\Mapa_Exportado.pdf"
+        ruta_pdf_export = r"output.pdf"
         layout.exportToPDF(ruta_pdf_export, resolution=300)
         print(f"Layout exportado a PDF: {ruta_pdf_export}")
 
