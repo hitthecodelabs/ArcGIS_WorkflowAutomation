@@ -5,7 +5,7 @@ arcpy.AddMessage("Hello, World!")
 # print("Hello, World!")
 
 # Especifica la ruta al proyecto de ArcGIS Pro (.aprx)
-proyecto_aprx = arcpy.mp.ArcGISProject(r"C:\Ruta\A\Tu\Proyecto.aprx")
+proyecto_aprx = arcpy.mp.ArcGISProject(r"project.aprx")
 
 # Obtiene el layout por su nombre (si ya existe)
 layout = proyecto_aprx.listLayouts("MiLayout")[0]
