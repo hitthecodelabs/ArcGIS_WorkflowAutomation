@@ -51,6 +51,19 @@ arcpy.conversion.FeatureClassToShapefile(
 )
 '''
 
+'''
+arcpy.conversion.FeaturesToJSON(
+    in_features="AreasProtegidas",
+    out_json_file=r"output.geojson",
+    format_json="FORMATTED",
+    include_z_values="NO_Z_VALUES",
+    include_m_values="NO_M_VALUES",
+    geoJSON="GEOJSON",
+    outputToWGS84="WGS84",
+    use_field_alias="USE_FIELD_NAME"
+)
+'''
+
 def process_points_to_polygon(input_point_feature, output_gdb, output_folder):
     """
     Converts point features to lines and then to polygons, finally exporting the polygon to a shapefile.
