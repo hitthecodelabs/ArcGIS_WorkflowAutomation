@@ -1,6 +1,13 @@
 import arcpy
 import os
 
+'''
+arcpy.conversion.FeatureClassToShapefile(
+    Input_Features="SNAP_AreasProtegidas_Ecuador",
+    Output_Folder=r"output_folder"
+)
+'''
+
 def process_points_to_polygon(input_point_feature, output_gdb, output_folder):
     """
     Converts point features to lines and then to polygons, finally exporting the polygon to a shapefile.
