@@ -8,6 +8,19 @@ arcpy.conversion.FeatureClassToShapefile(
 )
 '''
 
+'''
+arcpy.management.PointsToLine(
+    Input_Features="Hoja1$Event",
+    Output_Feature_Class=r"Default.gdb\Hoja1Event_PointsToLine1",
+    Line_Field=None,
+    Sort_Field=None,
+    Close_Line="CLOSE",
+    Line_Construction_Method="CONTINUOUS",
+    Attribute_Source="NONE",
+    Transfer_Fields=None
+)
+'''
+
 def process_points_to_polygon(input_point_feature, output_gdb, output_folder):
     """
     Converts point features to lines and then to polygons, finally exporting the polygon to a shapefile.
