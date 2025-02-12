@@ -34,6 +34,16 @@ arcpy.management.PointsToLine(
 )
 '''
 
+'''
+arcpy.management.FeatureToPolygon(
+    in_features="Hoja1HonorioAbsalonGarcia_PointsToLine1",
+    out_feature_class=r"project_folder\Default.gdb\Hoja1HonorioAb_FeatureToPoly",
+    cluster_tolerance=None,
+    attributes="ATTRIBUTES",
+    label_features=None
+)
+'''
+
 def process_points_to_polygon(input_point_feature, output_gdb, output_folder):
     """
     Converts point features to lines and then to polygons, finally exporting the polygon to a shapefile.
